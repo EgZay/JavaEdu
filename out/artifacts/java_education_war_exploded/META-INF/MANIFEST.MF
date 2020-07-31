@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: zayce
+Build-Jdk: 14.0.1
+Implementation-Title: java-education
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: ru.noorsoft
+Main-Class: ${start-class}
+

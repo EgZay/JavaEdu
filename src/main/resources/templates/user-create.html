@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Create user</title>
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<form action="#" th:action="@{/user-create}" th:object="${user}" method="post">
+    <div class = "form">
+    <label for="firstName">FIRST_NAME</label>
+    <input type="text" th:field="*{firstName}" id="firstName" placeholder="FIRST_NAME">
+        <span th:errors="*{firstName}" class="error"></span>
+    </div>
+
+    <div class = "form">
+    <label for="lastName">LAST_NAME</label>
+    <input type="text" th:field="*{lastName}" id="lastName" placeholder="LAST_NAME">
+    <span th:errors="*{lastName}" class="error"></span>
+    </div>
+
+    <div class = "form">
+    <label for="phone_number">PHONE_NUMBER</label>
+    <input type="text" th:field="*{phone_number}" id="phone_number" placeholder="PHONE_NUMBER">
+        <span th:errors="*{phone_number}" class="error"></span>
+    </div>
+
+    <div class = "form">
+    <label for="email">EMAIL</label>
+    <input type="text" th:field="*{email}" id="email" placeholder="EMAIL">
+        <span th:errors="*{email}" class="error"></span>
+    </div>
+    <input type="submit" value="Add">
+</form>
+</body>
+</html>
